@@ -12,6 +12,8 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Tags from '../../components/tags'
+import HeadlessBlocks from 'headless-blocks';
+import * as blockComponents from 'headless-block-components';
 
 export default function Post({ post, posts, preview }) {
   const router = useRouter()
@@ -46,6 +48,10 @@ export default function Post({ post, posts, preview }) {
                 author={post.author?.node}
                 categories={post.categories}
               />
+              <HeadlessBlocks
+			          postContent={ post.content }
+          			blockComponents={ blockComponents }
+          		/>
               <PostBody content={post.content} />
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}

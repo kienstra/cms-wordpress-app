@@ -107,7 +107,7 @@ WORDPRESS_API_URL=...
 
 ```bash
 npm install
-npm run dev
+NODE_TLS_REJECT_UNAUTHORIZED=0 npm run dev # When WP is on a local site with a self-signed SSL certificate.
 
 # or
 
