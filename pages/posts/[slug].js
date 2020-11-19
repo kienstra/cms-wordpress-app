@@ -48,9 +48,9 @@ export default function Post({ post, posts, preview }) {
                 author={post.author?.node}
                 categories={post.categories}
               />
-              <HeadlessBlocks
-			          postContent={ post.content }
-          			blockComponents={ blockComponents }
+                <HeadlessBlocks
+                  postContent={ post.content }
+                  blockComponents={ blockComponents }
           		/>
               <PostBody content={post.content} />
               <footer>
