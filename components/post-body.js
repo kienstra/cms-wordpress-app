@@ -1,4 +1,4 @@
-import HeadlessBlocks from 'headless-blocks';
+import { HeadlessBlocks } from 'headless-blocks';
 import * as blockComponents from 'headless-block-components';
 
 export default function PostBody({ content }) {
