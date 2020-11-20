@@ -9,8 +9,8 @@
   "dependencies": {
     "classnames": "2.2.6",
     "date-fns": "2.14.0",
-    "headless-block-components": "0.1.0",
-    "headless-blocks": "0.1.1",
+    "headless-blocks": "0.2.0",
+    "headless-block-components": "0.2.0",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

@@ -1,5 +1,5 @@
 import { HeadlessBlocks } from 'headless-blocks';
-import * as blockComponents from 'headless-block-components';
+import { blockComponents } from 'headless-block-components';
 
 export default function PostBody({ content }) {
   return (
