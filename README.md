@@ -28,16 +28,6 @@ Once you have access to [the environment variables you'll need](#step-3-set-up-e
 - [Kontent](/examples/cms-kontent)
 - [Blog Starter](/examples/blog-starter)
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example cms-wordpress cms-wordpress-app
-# or
-yarn create next-app --example cms-wordpress cms-wordpress-app
-```
-
 ## Configuration
 
 ### Step 1. Prepare your WordPress site
@@ -107,7 +97,7 @@ WORDPRESS_API_URL=...
 
 ```bash
 npm install
-npm run dev
+NODE_TLS_REJECT_UNAUTHORIZED=0 npm run dev # When WP is on a local site with a self-signed SSL certificate.
 
 # or
 
